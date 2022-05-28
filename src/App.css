@@ -1,0 +1,40 @@
+body{
+    background: rgb(240, 240, 240);
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: 'header header' 'nav main';
+    column-gap: 10px;
+    row-gap: 10px;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper__main {
+    grid-area: main;
+}
+
+.input {
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background: rgb(180, 180, 180);
+}
+
+.action-btn {
+    width: 100%;
+}

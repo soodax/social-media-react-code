@@ -1,0 +1,16 @@
+.userMessage__item:first-child {
+    margin: 0 0 10px 0;
+}
+
+.userMessage__item {
+    display: inline-block;
+    background: rgb(240, 240, 240);
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border: 0px transparent;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: black;
+}

@@ -1,0 +1,52 @@
+.header {
+    grid-area: header;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+
+    &__userBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__userBlock img {
+        width: 32px;
+    }
+
+    &__logout {
+        background: rgb(82, 148, 226);
+        color: white;
+        padding: 5px;
+        margin: 0 5px 0 5px;
+        transition: 0.3s all ease-out;
+        font-weight: 600;
+    }
+
+    &__logout:hover {
+        background: rgb(32, 98, 176);
+        transition: 0.3s all ease-out;
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+    }
+
+    &__currentUser {
+        text-decoration: underline;
+    }
+
+    &__logo {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+
+
+
+
+

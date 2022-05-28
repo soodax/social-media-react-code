@@ -1,0 +1,75 @@
+.userItem {
+    display: grid;
+    grid-template-areas: 'photo main' 'bottom bottom';
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr 30px;
+    max-width: 300px;
+    margin: 0 0 10px 0;
+    background: white;
+}
+
+.userItem:last-child{
+    margin: 0;
+}
+
+.userItem__image {
+    grid-area: photo;
+}
+
+.userItem__main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+@media (max-width: 400px) {
+    .userItem__info {
+        flex-direction: column;
+    }
+}
+
+.userItem__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userItem__bottom {
+    grid-area: bottom;
+}
+
+.userItem__button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s all ease-out;
+    font-weight: 600;
+}
+
+.userItem__buttonFollow {
+    background: rgb(82, 148, 226);
+    color: white;
+}
+
+.userItem__buttonFollow:hover {
+    background: rgb(32, 98, 176);
+    transition: 0.3s all ease-out;
+}
+
+.userItem__buttonUnfollow {
+    background: rgb(240, 128, 128);
+    color: white;
+}
+
+.userItem__buttonUnfollow:hover {
+    background: rgb(200, 88, 88);
+    transition: 0.3s all ease-out;
+}
+
+.userItem__button:disabled {
+    background: darkgrey;
+    cursor: not-allowed;
+    color: white;
+}

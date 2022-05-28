@@ -1,0 +1,29 @@
+.post {
+    margin: 10px 0 0 0;
+    background: white;
+
+    &__row {
+        padding: 5px;
+        border: 1px solid lightgrey;
+    }
+
+    &__img img {
+        width: 40px;
+    }
+    
+    &__text {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text img {
+        margin: 0 2px 0 10px;
+    }
+
+    &__text img:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+

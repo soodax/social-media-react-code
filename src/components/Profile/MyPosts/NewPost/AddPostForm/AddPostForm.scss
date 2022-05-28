@@ -1,0 +1,21 @@
+.newPost__input {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.newPost__button {
+    background: rgb(82, 148, 226);
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+.newPost__button:hover {
+    transition: 0.4s;
+    background: rgb(32, 98, 176);
+}
